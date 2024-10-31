@@ -1,0 +1,15 @@
+{
+  "name": "dead name remover",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "changes word to another",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
